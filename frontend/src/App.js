@@ -10,6 +10,7 @@ import EventEdit from './pages/EventEdit'
 import UserDetails from './pages/UserDetails'
 import EventDetails from './pages/EventDetails'
 import Login from './pages/Login'
+import NotFound from './cmps/NotFound'
 
 import './styles/global.scss';
 import { Switch, Route } from "react-router-dom";
@@ -35,6 +36,7 @@ class App extends React.Component {
                     <Route component={UserDetails} exact path="/user/:id" />
                     <Route component={EventDetails} exact path="/event/:id?" />
                     <Route component={Login} exact path="/login" />
+                    <Route component={NotFound}/>
                 </Switch>
                 <Footer  />
             </section>
